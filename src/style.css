@@ -1,0 +1,67 @@
+
+
+body {
+    background-color:rgb(220, 192, 247);
+    font-family: Arial, sans-serif;
+}
+
+.item-posit {
+    display: inline-block;
+    background-color: lightskyblue; 
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    width: 150px; 
+    height: auto; 
+    min-height: 150px; 
+    transform: rotate(-5deg); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+    position: relative;
+}
+
+.item-posit.importante {
+    background-color: red; 
+}
+
+.item-posit:nth-child(odd) {
+    transform: rotate(4deg); 
+}
+
+.item-posit:nth-child(even) {
+    transform: rotate(-4deg); 
+}
+
+.item-posit h3 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    word-break: break-word; 
+}
+
+.item-posit p {
+    margin: 0;
+    font-size: 1em;
+    word-break: break-word; 
+}
+
+.btn-cuadro {
+    width: 35px;
+    height: 35px;
+    border: none;
+}
+
+.btn-cuadro.importante {
+    background-color: red; 
+}
+
+.btn-cuadro.no-importante {
+    background-color: lightskyblue; 
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+    align-self: flex-start; 
+}
